@@ -114,23 +114,42 @@
 
 </style>
 
-# Wiktoria Szramkowska
+# Wiktoria Szramkowska 
+**Game Dev Student | Gameplay Programmer | First-Person Horror Games**
 
-Gameplay Programmer
+Hi! I’m a game development student passionate about **first-person horror games** and atmospheric experiences.
+
+
+You can find my projects on [Itch.io](https://squlddy.itch.io/) and follow my work on [GitHub](https://github.com/wszramkowska)
+
+---
+
+##  Featured Projects
+
+### **Alive Below** – Itch.io  
+A first-person horror game where you must escape the dungeon. 
+![Screenshot](assets/horror1.gif)  
+[Play on Itch.io](https://squlddy.itch.io/alive-below) 
+
+---
+
+### **Mocap Cutscene Project**  
+A cinematic cutscene using motion capture.
+![GIF](assets/mocap.gif)  
+[Watch on YouTube](https://youtu.be/mvo69cnkEZ4?si=xGOdmm5CRphGPOn6)
+
+---
+
+### **Current Final Project (In Progress)**  
+I’m currently developing a **first-person horror game** for my final project.  
+No playable demo yet, but check back soon for updates!
 
 
 
 ---
 
-
-
-
-## Itch.io
-
-<iframe class="itch-widget" src="https://itch.io/embed/3456580" frameborder="0">
-  <a href="https://squlddy.itch.io/alive-below">Alive Below by Wiktoria Szramkowska, anstabo</a>
-</iframe>
-
-
-**Contact:** [wszramkowska@gmail.com](mailto:wszramkowska@gmail.com)
+## 📫 Contact
+- Email: [wszramkowska@gmail.com](mailto:wszramkowska@gmail.com)  
+- GitHub: [github.com/wszramkowska](https://github.com/wszramkowska)  
+- LinkedIn: 
 
