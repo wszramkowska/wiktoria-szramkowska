@@ -1,23 +1,37 @@
 name: Build and Deploy Doxygen Docs
-
 on:
   push:
     branches: [ main ]
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
+      
       - name: Install Doxygen & Graphviz
         run: sudo apt-get install doxygen graphviz -y
-
+      
       - name: Generate Doxygen Docs
         run: doxygen Doxyfile
-
-      - name: Deploy site and docs to GitHub Pages
+      
+      - name: Prepare deployment
+        run: |
+          # Create deployment directory
+          mkdir -p _site
+          # Copy all your website files (everything in root)
+          cp -r * _site/ 2>/dev/null || true
+          # Move generated docs into the site
+          mkdir -p _site/docs
+          cp -r docs/html/* _site/docs/
+          # Clean up the docs source folder from _site
+          rm -rf _site/docs/html
+      
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+          publish_dir: _site
