@@ -2,6 +2,7 @@
 
 PROJECT_NAME           = "Portfolio Site"
 OUTPUT_DIRECTORY       = docs
+HTML_OUTPUT            = html
 INPUT                  = src
 RECURSIVE              = YES
 GENERATE_HTML          = YES
