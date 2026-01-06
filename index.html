@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wiktoria Szramkowska | Game Developer Portfolio</title>
+  <style>
+    /* ====== Global Styles ====== */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background-color: #0a0a0a;
+      color: #e6e6e6;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      color: #4E2C5D;
+      margin-top: 0;
+    }
+
+    a {
+      color: #4E2C5D;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: #d63384;
+    }
+
+    /* ====== Hero Section ====== */
+    .hero {
+      position: relative;
+      height: 60vh;
+      background: url('assets/banner.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero h2 {
+      font-weight: 300;
+      color: #ccc;
+      margin-top: 0;
+    }
+
+    .links {
+      margin-top: 1rem;
+    }
+
+    .links a {
+      margin: 0 0.5rem;
+      padding: 0.5rem 0.8rem;
+      border-radius: 8px;
+      background-color: #4E2C5D; 
+      color: #fff;               
+      text-decoration: none;
+      transition: 0.3s;
+      border: none;              
+    }
+
+    .links a:hover {
+      background-color: #d63384; 
+      color: #fff;
+      transform: translateY(-2px); 
+    }
+
+
+    /* ====== Section Layout ====== */
+    main {
+      padding: 3rem 10%;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    /* ====== Project Cards ====== */
+    .project-card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      background: #151515;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 15px rgba(181, 23, 158, 0.2);
+      align-items: center;
+    }
+
+    .project-card img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #4E2C5D;
+    }
+
+    .project-info {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      background-color: #4E2C5D;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #d63384;
+    }
+
+    .btn.secondary {
+      background-color: transparent;
+      border: 1px solid #4E2C5D;
+      color: #4E2C5D;
+    }
+
+    .btn.secondary:hover {
+      background-color: #4E2C5D;
+      color: #fff;
+    }
+
+    /* ====== Embedded Videos ====== */
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* ====== Footer ====== */
+    footer {
+      background: #151515;
+      text-align: center;
+      padding: 1rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    /* ====== Simple Animation ====== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-content, .project-card, footer {
+      animation: fadeIn 1s ease forwards;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ====== Hero Section ====== -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Wiktoria Szramkowska</h1>
+      <h2>Game Developer | Unreal Engine | C++ & Blueprints</h2>
+      <div class="links">
+        <a href="https://github.com/wszramkowska" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/wiktoria-szramkowska-71b0a835a/" target="_blank">LinkedIn</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====== About Section ====== -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m a games development student specializing in Unreal Engine.
+        Most of my projects explore first-person horror and immersive, atmospheric design.
+        I work primarily in C++ and Blueprints, and I enjoy building gameplay systems, AI logic, and cinematic sequences using motion capture.
+      </p>
+    </section>
+
+    <!-- ====== Projects Section ====== -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <!-- Example Project: Itch.io Game -->
+      <div class="project-card">
+        <img src="assets/alive-below-thumb.png" alt="Alive Below Thumb" />
+        <div class="project-info">
+          <h3>Alive Below</h3>
+          <p>
+            A short first-person horror experience built in Unreal Engine. Player sneaks through a dungeon, avoiding the monster and finding the key to escape.
+          </p>
+          <a href="https://squlddy.itch.io/alive-below" class="btn" target="_blank">Play on Itch.io</a>
+          <a href="https://youtu.be/kEkBX7NXY7w?si=JEWvbtUjWlKFb8m9" class="btn secondary" target="_blank">Watch Trailer</a>
+        </div>
+      </div>
+
+      <!-- Project: Mocap Cutscene -->
+      <div class="project-card">
+        <img src="assets/mocap-ss.png" alt="Mocap Project" />
+        <div class="project-info">
+          <h3>Found Footage</h3>
+          <p>
+            A cinematic cutscene for a collaborative horror project. I was able to work with students form different game industries such as art, animation and games design. The cutscene follows a protagonist who discovers police body cam footage in an old abandoned house. 
+          </p>
+          <a href="https://youtu.be/mvo69cnkEZ4?si=C3LfjV5DPbn8vgZK" class="btn secondary" target="_blank">Watch Trailer</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Contact Section ====== -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        I’m always open to collaboration or feedback. You can reach me through:
+      </p>
+      <ul>
+        <li>Email: <a href="mailto:wszramkowska@gmail.com">wszramkowska@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/wszramkowska" target="_blank">github.com/wszramkowska</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/wiktoria-szramkowska-71b0a835a/" target="_blank">linkedin.com/in/wiktoria-szramkowska</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Wiktoria Szramkowska — Built with HTML & CSS | Hosted on GitHub Pages</p>
+  </footer>
+</body>
+</html>
